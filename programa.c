@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h> 
 
 int random_number(int upper_limit){
   
@@ -15,6 +16,10 @@ int main(void)
 {
 
   int num;
+  time_t t;
+  
+  /* Intializes random number generator */
+  srand((unsigned) time(&t));
 
   num = random_number(100);
 
