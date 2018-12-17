@@ -4,25 +4,18 @@
 
 int random_number(int upper_limit){
   
-  int temp;
-
-  temp = rand() % upper_limit;
-
-  return temp;
+  return rand() % upper_limit;
 
 }
 
 int main(void)
 {
 
-  int num;
   time_t t;
   
   srand((unsigned) time(&t));
 
-  num = random_number(100);
-
-  printf("%d\n", num);
+  printf("%d\n", random_number(100));
 
   return 0;
 }
