@@ -5,6 +5,10 @@ CFLAGS = -g -Wall
 
 .PHONY: default all clean
 
+tags: ctags
+ctags:
+	ctags -R
+
 default: $(TARGET)
 all: default
 
